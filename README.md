@@ -10,8 +10,6 @@ We explored the process of fine-tuning a pretrained ResNet50 model on the CIFAR-
 - Learning rate: 0.01
 - Momentum: 0.9
 - Weight decay: 5e-4
-- Learning-rate scheduler: Cosine Annealing
-- Scheduler T_max: 200
 - Epochs: 60
 - Number of classes: 10
 
@@ -31,7 +29,6 @@ When the batch size was increased from 32 to 64, an accuracy of **92.63%** was a
 - Fine-tuning an ImageNet-pretrained ResNet50 is effective for CIFAR-10 classification.
 - The first convolutional layer was modified to better handle CIFAR-10's 32×32 images.
 - The final classification layer was replaced with a 10-class classifier.
-- Cosine Annealing was used for learning-rate scheduling.
 - Increasing the batch size from 32 to 64 improved the reported accuracy from **92.34% to 92.63%**.
 
 ## Project Structure
